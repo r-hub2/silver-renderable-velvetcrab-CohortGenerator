@@ -1,0 +1,27 @@
+DBMS:
+postgresql
+
+Error:
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "uq_cd_name"
+  Detail: Key (name)=([REWARD] Depression outcome (validated)) already exists.
+
+SQL:
+INSERT INTO webapi.cohort_definition(id, name, description, expression_type)
+	VALUES (1799, '[REWARD] Depression outcome (validated)', 'NULL', 'SIMPLE_EXPRESSION')
+
+R version:
+R version 4.2.3 (2023-03-15 ucrt)
+
+Platform:
+x86_64-w64-mingw32
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:

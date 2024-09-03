@@ -1,0 +1,36 @@
+Package: CohortGenerator
+Type: Package
+Title: An R Package for Cohort Generation Against the OMOP CDM
+Version: 0.11.0
+Date: 2024-08-31
+Authors@R: c(
+  person("Anthony", "Sena", email = "sena@ohdsi.org", role = c("aut", "cre")),
+  person("Jamie", "Gilbert", role = c("aut")),
+  person("Gowtham", "Rao", email = "gowthamrao@gmail.com", role = c("aut")),
+  person("Martijn", "Schuemie", email = "schuemie@ohdsi.org", role = c("aut")),
+  person("Observational Health Data Science and Informatics", role = c("cph"))
+  )
+Maintainer: Anthony Sena <sena@ohdsi.org>
+Description: An R package for that encapsulates the functions for generating cohorts against the OMOP CDM.
+Depends: DatabaseConnector (>= 5.0.0), R (>= 3.6.0), R6
+Imports: checkmate, digest, dplyr, lubridate, methods, ParallelLogger
+        (>= 3.0.0), readr (>= 2.1.0), rlang, RJSONIO, jsonlite,
+        ResultModelManager, SqlRender (>= 1.11.1), stringi (>= 1.7.6),
+        tibble
+Suggests: CirceR (>= 1.1.1), Eunomia, knitr, rmarkdown, testthat,
+        withr, zip
+License: Apache License
+VignetteBuilder: knitr
+URL: https://ohdsi.github.io/CohortGenerator/,
+        https://github.com/OHDSI/CohortGenerator
+BugReports: https://github.com/OHDSI/CohortGenerator/issues
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-09-03 18:38:10 UTC; asena5
+Author: Anthony Sena [aut, cre],
+  Jamie Gilbert [aut],
+  Gowtham Rao [aut],
+  Martijn Schuemie [aut],
+  Observational Health Data Science and Informatics [cph]
